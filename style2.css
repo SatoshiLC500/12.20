@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 10pt;
+    margin: 0px;
+    padding: 0px;
+
+}
+html{
+    background-image: url(kepek/black.png);
+}
+main{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgb(0,183,255,0,267);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "section"
+    "footer";
+}
+header{
+    grid-area: header;
+    background-image: url(kepek/game.jpg);
+    height: 300px;
+    background-size: cover;
+}
+nav{
+    grid-area: nav;
+    background-color: lightgray;
+}
+nav li{
+    list-style-type: none;
+    display: inline;
+    padding: 3vw;
+    height: 50px;
+    padding-top: 5px;
+}
+nav li:hover{
+    background-color: orange;
+}
+nav a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+section{
+    background-color: darkgrey;
+    grid-area: section;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    "article aside";
+    padding: 10px;
+}
+footer{
+    grid-area: footer;
+}
+footer p {
+    text-align: center;
+    background-color: orange;
+    color: black;
+}
+tr:hover{
+    background-color: orange;
+}
+.masodik{
+    background-color: lightgrey;
+
+}
+.hatter{
+    background-color: white;
+
+}
